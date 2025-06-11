@@ -3,26 +3,28 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>Building a Help Desk Ticketing System: From Server Setup to Ticket Resolution with osTicket</h1>
-In this project, *Project Summary:*
-
-Deployed osTicket, an open-source help desk system, on an Azure virtual machine. Configured IIS, installed osTicket, and managed ticket lifecycle (creation, assignment, response, resolution). Demonstrated skills in Azure, VM management, web server configuration, and help desk ticketing system implementation..<br />
+<h1>Mastering osTicket : A Comprehensive Guide to setup, Configure and Ticket Management</h1>
+In this project, i Deployed osTicket, an open-source help desk system, on an Azure virtual machine. Configured IIS, installed osTicket, and managed ticket lifecycle (creation, assignment, response, resolution). Demonstrated skills in Azure, VM management, web server configuration, and help desk ticketing system implementation.<br />
 
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure: Virtual Machines
-- Remote Desktop: To access the VM
-- IIS: Web server setup for osTicket
-- Windows 10 Pro: Operating system on the VM
+- Microsoft Azure (Virtual Machines/Compute)
+- Remote Desktop 
+- Internet information ServicesIIS (IIS)
+
+<h2>Operating Systems Used</h2>
+
+- Windows 10 (21H2)
 
 <h2>Prerequisites</h2>
-To ensure a smooth installation of osTicket, I first installed the necessary prerequisites:
 
-- MySQL: As the database for osTicket.
-- HeidiSQL: For managing the osTicket database.
-- PHP & PHP Manager: To handle the server-side scripting.
-- VC Redist & URL Rewrite: Dependencies for running PHP on IIS.
+- MySQL 5.5.62 (mysql-5.5.62-win32.msi)
+- HeidiSQL
+- PHP 7.3.8
+- PHP ManagerForlls_V1.5.0.msi
+- VC Redist.x86.exe
+- Rewrite Module (rewite_amd64_en-US.msi)
 
 <h2>Installation Steps</h2>
 
