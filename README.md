@@ -4,7 +4,9 @@
 </p>
 
 <h1>Building a Help Desk Ticketing System: From Server Setup to Ticket Resolution with osTicket</h1>
-In this project, I installed and configured osTicket, an open-source help desk system, on a virtual machine hosted in Microsoft Azure. I used Remote Desktop to manage the VM, set up IIS as the web server, and walked through the entire lifecycle of ticket management within osTicket.<br />
+In this project, *Project Summary:*
+
+Deployed osTicket, an open-source help desk system, on an Azure virtual machine. Configured IIS, installed osTicket, and managed ticket lifecycle (creation, assignment, response, resolution). Demonstrated skills in Azure, VM management, web server configuration, and help desk ticketing system implementation..<br />
 
 
 <h2>Environments and Technologies Used</h2>
