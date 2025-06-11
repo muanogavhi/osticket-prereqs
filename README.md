@@ -3,99 +3,147 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
-
-
+<h1>Building a Help Desk Ticketing System: From Server Setup to Ticket Resolution with osTicket</h1>
+In this project, I installed and configured osTicket, an open-source help desk system, on a virtual machine hosted in Microsoft Azure. I used Remote Desktop to manage the VM, set up IIS as the web server, and walked through the entire lifecycle of ticket management within osTicket.<br />
 
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Internet Information Services (IIS)
+- Microsoft Azure: Virtual Machines
+- Remote Desktop: To access the VM
+- IIS: Web server setup for osTicket
+- Windows 10 Pro: Operating system on the VM
 
-<h2>Operating Systems Used </h2>
+<h2>Prerequisites</h2>
+To ensure a smooth installation of osTicket, I first installed the necessary prerequisites:
 
-- Windows 10</b> (21H2)
-
-<h2>List of Prerequisites</h2>
-
-Internet Information Services (IIS)
-
-PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
-
-Rewrite Module (rewrite_amd64_en-US.msi)
-
-PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip)
-
-Visual C++ Redistributable (VC_redist.x86.exe)
-
-MySQL 5.5.62 (mysql-5.5.62-win32.msi)
-
-HeidiSQL
+- MySQL: As the database for osTicket.
+- HeidiSQL: For managing the osTicket database.
+- PHP & PHP Manager: To handle the server-side scripting.
+- VC Redist & URL Rewrite: Dependencies for running PHP on IIS.
 
 <h2>Installation Steps</h2>
 
 <p>
-<img width="468" alt="Screen Shot 2024-07-04 at 1 47 31 PM" src="https://github.com/Bpeduru/osticket-prereqs/assets/171273980/1bf84327-0832-476d-8285-c3eccdc5f923"
-
-
+<img width="2056" alt="Screenshot 2024-10-16 at 8 49 19 PM" src="https://github.com/user-attachments/assets/1b86d9cc-fe39-461e-b4a5-2ce827a540fc">
 </p>
 <p>
-Create and log onto a virtual machine in Micorsoft Azure, then open control panel, enabled internet information Services, CGI and common http features. IIS is the webserver that OSticket will be running on. 
+Create a Windows 10 Pro Virtual Machine in Azure and use Remote Desktop to access it.
 </p>
 <br />
 
 <p>
-<img width="369" alt="Screen Shot 2024-07-04 at 1 44 28 PM" src="https://github.com/Bpeduru/osticket-prereqs/assets/171273980/888554f6-f11f-460d-adba-ce50ffde36d9">
-
+<img width="2056" alt="Screenshot 2024-10-16 at 9 05 02 PM" src="https://github.com/user-attachments/assets/10d671e1-4885-4f3c-9e87-9ea9fd908d04">
 </p>
 <p>
-Download and install all of the prerequisite files needed to run the ticketing software.
+Prepare Windows 10 as a Web Server by installing and enabling IIS, along with the required application features and the IIS Management Console.
 </p>
 <br />
 
 <p>
-<img width="651" alt="Screen Shot 2024-07-04 at 2 00 09 PM" src="https://github.com/Bpeduru/osticket-prereqs/assets/171273980/9c68bdbd-0f11-425c-9e88-cc9a11dc9e9a">
-
+<img width="2056" alt="Screenshot 2024-10-16 at 9 09 01 PM" src="https://github.com/user-attachments/assets/337f9312-cea4-4806-85ba-a6fa965a8363">
 </p>
 <p>
-Create a PHP directory within the C: Drive, and extract contents of PHP 7.3.8 into it. 
+Install PHP Manager, VC Redist, Rewrite Module, and PHP.
+
+Install MySQL and set it up for database management with HeidiSQL.
 </p>
 <br />
-<img width="1070" alt="Screen Shot 2024-07-04 at 2 16 14 PM" src="https://github.com/Bpeduru/osticket-prereqs/assets/171273980/ab883fa7-206e-443f-8a6f-866523dd6285">
+
+<p>
+<img width="2056" alt="Screenshot 2024-10-16 at 9 22 05 PM" src="https://github.com/user-attachments/assets/4d7a1f9c-5a61-43ae-b203-572b8e93347a">
 </p>
+<p>
+Download and extract the osTicket files, place them in the IIS root directory, and configure it as a website.
+
+Test to ensure osTicket is running properly through IIS.
 </p>
 <br />
-Open IIS as an admin and registered PHP within IIS. 
+
+<p>
+<img width="2056" alt="Screenshot 2024-10-16 at 9 24 19 PM" src="https://github.com/user-attachments/assets/b9413205-a3be-44de-83e7-5c1b884f1826">
+</p>
+<p>
+Enable necessary PHP extensions and assign proper file permissions for security and functionality.
+</p>
 <br />
+
+<p>
+<img width="2056" alt="Screenshot 2024-10-16 at 9 38 08 PM" src="https://github.com/user-attachments/assets/62988fbe-4f9c-4c87-afd8-e2640aa92aae">
 </p>
+<p>
+Register osTicket, connected it to SQL, and completed the setup process.
+</p>
+<br />
+
+<h2>Post-Installation Configuration:</h2>
+<p>
+After the installation, configure osTicket to function as an efficient help desk system:
 </p>
 
-<img width="846" alt="image" src="https://github.com/Bpeduru/osticket-prereqs/assets/171273980/7f43fb1a-b37a-4471-a1c2-d37adec58a9a">
+<p>
+<img width="2056" alt="Screenshot 2024-10-16 at 9 49 48 PM" src="https://github.com/user-attachments/assets/4de83a5f-85a9-4367-a98c-8536678f6148">
 </p>
+<p>
+Create roles for administrators and agents and set up teams for different support levels (e.g., Level 1 and Level 2).
 </p>
+<br />
 
-Copy contents of OS ticket "Upload" file into the www.root folder within C: Drive. This is the web server's main folder. Rename the file to "osTicket".
+<p>
+<img width="2056" alt="Screenshot 2024-10-16 at 9 56 51 PM" src="https://github.com/user-attachments/assets/4ca95f30-b2ba-4bfe-afa1-5da939803a24">
+</p>
+<p>
+Add support agents and end-users who would be interacting with the ticket system.
+</p>
+<br />
 
+<p>
+<img width="2056" alt="Screenshot 2024-10-16 at 10 07 53 PM" src="https://github.com/user-attachments/assets/1dde7b62-c099-4e95-8397-afe8e163814f">
+</p>
+<p>
+Establish SLAs (Service Level Agreements):
 
+Define response times for various ticket priorities, such as a 1-hour response for critical issues (Sev-A).
+</p>
+<br />
 
-![l](https://github.com/Bpeduru/osticket-prereqs/assets/171273980/7381f72d-819b-4a0c-8287-92aa26e7d16e)
+<p>
+<img width="2056" alt="Screenshot 2024-10-16 at 10 16 24 PM" src="https://github.com/user-attachments/assets/701f672c-2348-494e-9f62-eef1b55e38ff">
+</p>
+<p>
+Set up help topics to categorize user requests, like "Password Resets" or "Equipment Requests."
+</p>
+<br />
 
+<h2>Managing the Ticket Lifecycle:</h2>
 
-Go back to Internet Information Services --> PHP manager --> Enable or Disable an extension, and enable required extensions
+<p>
+<img width="2056" alt="Screenshot 2024-10-16 at 10 23 22 PM" src="https://github.com/user-attachments/assets/7da77515-0a2e-425b-8fd3-9e7aa4804e9b">
+</p>
+<p>
+Ticket Creation: Users or agents submit tickets via the help desk.
+</p>
+<br />
 
+<p>
+<img width="2056" alt="Screenshot 2024-10-16 at 10 27 43 PM" src="https://github.com/user-attachments/assets/b3d0f38f-0951-4b9b-bf50-439088cce8c2">
+</p>
+<p>
+Ticket Assignment: Tickets are supposed to be assigned based on priority and category. Sometimes the end user will not label their tickets correctly, and it is up to the help desk support to fix them so we can address the issue appropriately.
+</p>
+<br />
 
-<img width="1080" alt="Screen Shot 2024-07-04 at 2 48 43 PM" src="https://github.com/Bpeduru/osticket-prereqs/assets/171273980/aa5a4aff-edf1-40cd-9ca3-1e417d2432ae">
+<p>
+<img width="2056" alt="Screenshot 2024-10-16 at 10 37 12 PM" src="https://github.com/user-attachments/assets/d3733d73-49a5-44ff-96aa-6210b5884f37">
+</p>
+<p>
+Resolution and Closure: Agents resolve the issues, communicate with users, and close tickets once verified.
+</p>
+<br />
 
+<h2>Conclusion:</h2>
 
-Change name of ost-sampleconfig.php to ost-config.php, then change the permissions so that any user has full control. This is because the OSticket installer is going to manipulate this file, and we do not know which user it's going to use to do that. 
-
-
-<img width="944" alt="Screen Shot 2024-07-04 at 2 33 23 PM" src="https://github.com/Bpeduru/osticket-prereqs/assets/171273980/ffa337f5-5563-44cb-a87d-55297de2c9ce">
-
-open HeidiSQL and create a new connection to the MySQL Server. Also create a new database called OSticket. 
-
-Finish installing OsTicket on the browser. I created credentials and entered the credentials for the MySQl Database. After the installation was successful, go back and deleted the setup folder within C:\inetpub\wwwroot\osTicket to cleanup. 
-
+<p>
+This project gave me hands-on experience with setting up and managing a help desk system, demonstrating my ability to configure both the backend and operational side of IT ticket management and get familiar with a ticketing system environment as both an administrator and help desk support agent.
+</p>
+<br />
