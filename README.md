@@ -28,25 +28,28 @@ In this project, i Deployed osTicket, an open-source help desk system, on an Azu
 
 <h2>Installation Steps</h2>
 
-<p>
-<img width="2056" alt="Screenshot 2024-10-16 at 8 49 19 PM" src="https://github.com/user-attachments/assets/1b86d9cc-fe39-461e-b4a5-2ce827a540fc">
-</p>
+
+![image](https://github.com/user-attachments/assets/f7eb7fd0-41d5-49ce-a1e3-71590210f148)
+
+
 <p>
 Create a Windows 10 Pro Virtual Machine in Azure and use Remote Desktop to access it.
 </p>
 <br />
 
-<p>
-<img width="2056" alt="Screenshot 2024-10-16 at 9 05 02 PM" src="https://github.com/user-attachments/assets/10d671e1-4885-4f3c-9e87-9ea9fd908d04">
+
+![image](https://github.com/user-attachments/assets/335c96db-e920-4196-8a65-a8562267a9a6)
+
 </p>
 <p>
 Prepare Windows 10 as a Web Server by installing and enabling IIS, along with the required application features and the IIS Management Console.
 </p>
 <br />
 
-<p>
-<img width="2056" alt="Screenshot 2024-10-16 at 9 09 01 PM" src="https://github.com/user-attachments/assets/337f9312-cea4-4806-85ba-a6fa965a8363">
-</p>
+
+![image](https://github.com/user-attachments/assets/b91655ea-0bda-4480-ab1b-a0e30f468320)
+
+
 <p>
 Install PHP Manager, VC Redist, Rewrite Module, and PHP.
 
@@ -54,9 +57,10 @@ Install MySQL and set it up for database management with HeidiSQL.
 </p>
 <br />
 
-<p>
-<img width="2056" alt="Screenshot 2024-10-16 at 9 22 05 PM" src="https://github.com/user-attachments/assets/4d7a1f9c-5a61-43ae-b203-572b8e93347a">
-</p>
+
+![image](https://github.com/user-attachments/assets/75418ae1-54bc-4557-8f61-f878410929ef)
+
+
 <p>
 Download and extract the osTicket files, place them in the IIS root directory, and configure it as a website.
 
@@ -64,16 +68,18 @@ Test to ensure osTicket is running properly through IIS.
 </p>
 <br />
 
-<p>
-<img width="2056" alt="Screenshot 2024-10-16 at 9 24 19 PM" src="https://github.com/user-attachments/assets/b9413205-a3be-44de-83e7-5c1b884f1826">
-</p>
+
+![image](https://github.com/user-attachments/assets/ba28b34b-7522-48da-98b5-6662e15372f8)
+
 <p>
 Enable necessary PHP extensions and assign proper file permissions for security and functionality.
 </p>
 <br />
 
-<p>
-<img width="2056" alt="Screenshot 2024-10-16 at 9 38 08 PM" src="https://github.com/user-attachments/assets/62988fbe-4f9c-4c87-afd8-e2640aa92aae">
+
+![image](https://github.com/user-attachments/assets/574b4aee-19c4-4948-9bb9-d0351cf7c916)
+
+
 </p>
 <p>
 Register osTicket, connected it to SQL, and completed the setup process.
@@ -85,24 +91,27 @@ Register osTicket, connected it to SQL, and completed the setup process.
 After the installation, configure osTicket to function as an efficient help desk system:
 </p>
 
-<p>
-<img width="2056" alt="Screenshot 2024-10-16 at 9 49 48 PM" src="https://github.com/user-attachments/assets/4de83a5f-85a9-4367-a98c-8536678f6148">
+
+![image](https://github.com/user-attachments/assets/1eaa02dd-dfe1-487e-8090-5440c5437f8f)
+
 </p>
 <p>
 Create roles for administrators and agents and set up teams for different support levels (e.g., Level 1 and Level 2).
 </p>
 <br />
 
-<p>
-<img width="2056" alt="Screenshot 2024-10-16 at 9 56 51 PM" src="https://github.com/user-attachments/assets/4ca95f30-b2ba-4bfe-afa1-5da939803a24">
+
+![image](https://github.com/user-attachments/assets/f0b8692a-e010-417b-8400-b24ef6f392f0)
+
 </p>
 <p>
 Add support agents and end-users who would be interacting with the ticket system.
 </p>
 <br />
 
-<p>
-<img width="2056" alt="Screenshot 2024-10-16 at 10 07 53 PM" src="https://github.com/user-attachments/assets/1dde7b62-c099-4e95-8397-afe8e163814f">
+
+![image](https://github.com/user-attachments/assets/3e311e29-5e35-45c0-bf3f-a48f48be2553)
+
 </p>
 <p>
 Establish SLAs (Service Level Agreements):
@@ -111,8 +120,9 @@ Define response times for various ticket priorities, such as a 1-hour response f
 </p>
 <br />
 
-<p>
-<img width="2056" alt="Screenshot 2024-10-16 at 10 16 24 PM" src="https://github.com/user-attachments/assets/701f672c-2348-494e-9f62-eef1b55e38ff">
+
+![image](https://github.com/user-attachments/assets/e11ead53-0533-4f0a-9a72-0315403af66a)
+
 </p>
 <p>
 Set up help topics to categorize user requests, like "Password Resets" or "Equipment Requests."
@@ -121,8 +131,9 @@ Set up help topics to categorize user requests, like "Password Resets" or "Equip
 
 <h2>Managing the Ticket Lifecycle:</h2>
 
-<p>
-<img width="2056" alt="Screenshot 2024-10-16 at 10 23 22 PM" src="https://github.com/user-attachments/assets/7da77515-0a2e-425b-8fd3-9e7aa4804e9b">
+
+![image](https://github.com/user-attachments/assets/ac2823f0-1b87-452b-ba1f-bc37a6193e79)
+
 </p>
 <p>
 Ticket Creation: Users or agents submit tickets via the help desk.
