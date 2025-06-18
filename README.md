@@ -148,8 +148,9 @@ Ticket Assignment: Tickets are supposed to be assigned based on priority and cat
 </p>
 <br />
 
-<p>
-<img width="2056" alt="Screenshot 2024-10-16 at 10 37 12 PM" src="https://github.com/user-attachments/assets/d3733d73-49a5-44ff-96aa-6210b5884f37">
+![image](https://github.com/user-attachments/assets/0230c953-d1d3-4b35-a1e0-b0a1dbfc1352)
+
+
 </p>
 <p>
 Resolution and Closure: Agents resolve the issues, communicate with users, and close tickets once verified.
